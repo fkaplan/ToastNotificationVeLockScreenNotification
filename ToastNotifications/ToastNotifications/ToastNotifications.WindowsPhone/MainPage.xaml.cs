@@ -51,16 +51,6 @@ namespace ToastNotifications
 
         ToastTemplateType toastTemplate = ToastTemplateType.ToastText02;
 
-        private void bttn_Toast(object sender, RoutedEventArgs e)
-        {
-            var toastNotifier = ToastNotificationManager.CreateToastNotifier();
-            var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastText01);
-            var toastText = toastXml.GetElementsByTagName("text");
-            (toastText[0] as XmlElement).InnerText = "Line 1";
-            var toast = new ToastNotification(toastXml);
-            toastNotifier.Show(toast);
-
-        }
 
         private void b1_Click(object sender, RoutedEventArgs e)
         {
@@ -84,7 +74,7 @@ namespace ToastNotifications
             XmlDocument toastXml = ToastNotificationManager.GetTemplateContent(toastTemplate);
 
             XmlNodeList toastTextElements = toastXml.GetElementsByTagName("text");          //Text Notification    
-            toastTextElements[0].AppendChild(toastXml.CreateTextNode("Zikri Tamamladınız"));       //Heading text of Notification    
+            toastTextElements[0].AppendChild(toastXml.CreateTextNode("İstediğiniz Bir Mesaj"));       //Heading text of Notification    
 
             IXmlNode toastNode = toastXml.SelectSingleNode("/toast"); //Create toast node so you can add separete audio and duration    
 
@@ -103,9 +93,9 @@ namespace ToastNotifications
 
             XmlNodeList toastTextElements = toastXml.GetElementsByTagName("text");          //Text Notification    
 
-            toastTextElements[0].AppendChild(toastXml.CreateTextNode("Zikirmatik Ekstra"));       //Heading text of Notification    
+            toastTextElements[0].AppendChild(toastXml.CreateTextNode("Başlık Kısmı"));       //Heading text of Notification    
 
-            toastTextElements[1].AppendChild(toastXml.CreateTextNode("Zikriniz Tamamlandı"));    //Body text of Notification    
+            toastTextElements[1].AppendChild(toastXml.CreateTextNode("İstediğiniz Bir Mesaj"));    //Body text of Notification    
 
             IXmlNode toastNode = toastXml.SelectSingleNode("/toast");  //Create toast node so you can add separete audio and duration    
 
