@@ -7,8 +7,23 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    
     <Grid>
+        
+        <!--<TextBlock HorizontalAlignment="Left" Margin="25,31,0,0" TextWrapping="Wrap" Text="Toast Notifications ve Lock Screen Notifications Deneme" FontSize="25" VerticalAlignment="Top" Height="135" Width="342"/>
+        <TextBox HorizontalAlignment="Left" Margin="143,290,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="224"/>
+        <TextBox HorizontalAlignment="Left" Margin="143,356,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="224"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,290,0,0" TextWrapping="Wrap" Text="Başlık :" FontSize="25" VerticalAlignment="Top" Height="39" Width="113"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,356,0,0" TextWrapping="Wrap" Text="Mesaj :" FontSize="25" VerticalAlignment="Top" Height="39" Width="113"/>
+        <Button Content="Notification Yolla" Click="bttn_Toast" HorizontalAlignment="Left" Margin="193,419,0,0" VerticalAlignment="Top" Width="174"/>
+        -->
+        <Button Name="b1" Click="b1_Click" Height="94" Content="Simple Toast" Margin="107,74,0,472" Width="211"/>
+        <Button Name="b2" Click="b2_Click" Height="94" Content="Heading Toast" Margin="107,189,0,357" Width="211"/>
+        <Button Name="b3" Click="b3_Click" Height="94" Content="Detail Toast" Margin="107,307,0,239" Width="211"/>
+        <Button Name="b4" Click="b4_Click" Height="94" Content="New Page" Margin="107,466,0,80" Width="211"/>
+
 
     </Grid>
+    
 </Page>
+    
